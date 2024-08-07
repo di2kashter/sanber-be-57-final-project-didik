@@ -7,7 +7,7 @@ membuat endpoint user, product, categories dan order
 ## Deployment
  URL:
 
-- **Live URL**: [http://your-deployed-url.com](http://your-deployed-url.com)
+- **Live URL**: [https://sanber-be-57-final-project-didik-production.up.railway.app/](https://sanber-be-57-final-project-didik-production.up.railway.app/)
 
 
 
@@ -96,24 +96,42 @@ membuat endpoint user, product, categories dan order
                         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YjMyYTczZDFjOWJlMDU0ZmIzOWY0NCIsInJvbGVzIjpbInVzZXIiXSwiaWF0IjoxNzIzMDIxNjA2LCJleHAiOjE3MjMwMjUyMDZ9.imBoimcVHN3dM4B_heNXJ8wUy9_rIIQ8SP1qaSpVxng"
                 }
 
-    ### 2. **Product Endpoints**
-        - **GET** `/api/products`
+### 2. **Product Endpoints**
+  - **GET** `/api/products`
         - **GET** `/api/products/:id`
         - **POST** `/api/products`
         - **PUT** `/api/products/:id`
         - **DELETE** `/api/products/:id`
 
-    ### 3. **Categories Endpoints**
-        - **GET** `/api/categories`
+### 3. **Categories Endpoints**
+  - **GET** `/api/categories`
         - **GET** `/api/categories/:id`
         - **POST** `/api/categories`
         - **PUT** `/api/categories/:id`
         - **DELETE** `/api/categories/:id`
 
-    ### 4. **Order Endpoints**
-        - **GET** `/api/order`
-        - **GET** `/api/order/:id`
-        - **POST** `/api/order`
+### 4. **Order Endpoints**
+   - **GET** `/api/order`
+   - **GET** `/api/order/:id`
+   - **POST** `/api/order`
+            - **Headers**: 
+            - `Authorization`: Bearer `YOUR_JWT_TOKEN`
+            - **Request Body**: 
+                ```json
+                
+                {
+                    "orderItems": [
+                        {
+                        "productId": "66b0b7d1a531d1ebfbfb191a",
+                        "qty": 1
+                        },
+                        {
+                        "productId": "66b0b781a531d1ebfbfb1918",
+                        "qty": 1
+                        }
+                    ],
+                    "status": "pending"
+                    } 
         - **PATCH** `/api/order/:id`
         - **DELETE** `/api/order/:id`
 

@@ -9,6 +9,8 @@ membuat endpoint user, product, categories dan order
 
 - **Live URL**: [https://sanber-be-57-final-project-didik-production.up.railway.app/](https://sanber-be-57-final-project-didik-production.up.railway.app/)
 
+- **Postman Dokumentasi**: [https://documenter.getpostman.com/view/37218276/2sA3s3GqpQ](https://documenter.getpostman.com/view/37218276/2sA3s3GqpQ)
+
 
 
 ## API Endpoints
